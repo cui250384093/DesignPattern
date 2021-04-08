@@ -8,6 +8,6 @@ package com.yl.principle;
 public class Vehicle {
 
     public void run(String vehicle) {
-        System.out.println(vehicle + "is running.");
+        System.out.println(vehicle + " is running.");
     }
 }
