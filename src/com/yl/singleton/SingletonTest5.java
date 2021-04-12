@@ -9,8 +9,7 @@ public class SingletonTest5 {
 }
 
 /**
- * 懒汉式 - 线程安全 双重检查
- *
+ * 懒汉式 - 线程安全 双重检查 推荐使用
  */
 class Singleton5 {
     private static volatile Singleton5 INSTANCE;
