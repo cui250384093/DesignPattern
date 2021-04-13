@@ -17,14 +17,21 @@ public class OrderPizza {
             switch (orderType) {
                 case "greek" :
                     pizza = new GreekPizza();
+                    pizza.setName("Greek Pizza");
                     break;
                 case "chess" :
                     pizza = new ChessPizza();
+                    pizza.setName("Chess Pizza");
                     break;
                 default:
-                    break;
+                    return;
             }
+            pizza.prepare();
+            pizza.bake();
+            pizza.cut();
+            pizza.box();
         } while (true);
+
     }
 
     private String getType() {

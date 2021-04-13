@@ -16,6 +16,6 @@ public class ChessPizza extends Pizza {
 
     @Override
     public void prepare() {
-        System.out.println("Prepare ingredient for chess pizza.");
+        System.out.println("Prepare ingredients for chess pizza.");
     }
 }
