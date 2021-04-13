@@ -1,22 +1,22 @@
 package com.yl.absfactory.pizzastore;
 
+
 /**
  * @author candk
  * @Description
- * @date 4/13/21 - 4:13 PM
+ * @date 4/13/21 - 4:15 PM
  */
-public class BJFactory implements AbsFactory {
+public class LDFactory implements AbsFactory {
 
     @Override
     public Pizza createPizza(String orderType) {
         Pizza pizza = null;
-
         switch (orderType) {
             case "cheese" :
-                pizza = new BJCheesePizza();
+                pizza = new LDCheesePizza();
                 return pizza;
             case "pepper" :
-                pizza = new BJPepperPizza();
+                pizza = new LDPepperPizza();
                 return pizza;
             default:
                 return null;
