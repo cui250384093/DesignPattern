@@ -1,4 +1,4 @@
-package com.yl.factory.pizzastore;
+package com.yl.simplefactory.pizzastore;
 
 import java.io.*;
 
