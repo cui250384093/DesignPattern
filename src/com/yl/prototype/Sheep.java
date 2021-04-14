@@ -1,15 +1,18 @@
 package com.yl.prototype;
 
+import java.io.*;
+
 /**
  * @author candk
  * @Description 原型模式
  * @date 4/14/21 - 10:11 AM
  */
-public class Sheep implements Cloneable {
+public class Sheep implements Cloneable, Serializable {
 
     private String name;
     private int age;
     private String color;
+    private Sheep friend;
 
     public Sheep() {
     }
@@ -44,6 +47,14 @@ public class Sheep implements Cloneable {
         this.color = color;
     }
 
+    public Sheep getFriend() {
+        return friend;
+    }
+
+    public void setFriend(Sheep friend) {
+        this.friend = friend;
+    }
+
     @Override
     public String toString() {
         return "Sheep{" +
@@ -61,5 +72,40 @@ public class Sheep implements Cloneable {
     @Override
     protected Sheep clone() throws CloneNotSupportedException {
         return (Sheep) super.clone();
+    }
+
+    /**
+     * 深拷贝 - 通过对象的序列号实现
+     * @return
+     */
+    public Sheep deepClone() {
+        ByteArrayOutputStream bos = null;
+        ObjectOutputStream oos = null;
+        ByteArrayInputStream bis = null;
+        ObjectInputStream ois = null;
+
+        try {
+            bos = new ByteArrayOutputStream();
+            oos = new ObjectOutputStream(bos);
+            oos.writeObject(this);
+
+            //反序列化
+            bis = new ByteArrayInputStream(bos.toByteArray());
+            ois = new ObjectInputStream(bis);
+            return (Sheep) ois.readObject();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            try {
+                bos.close();
+                oos.close();
+                bis.close();
+                ois.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
