@@ -21,7 +21,10 @@ public class HouseDirector {
         this.houseBuilder = houseBuilder;
     }
 
-    //如何处理建造房子的流程，交给指挥者
+    /**
+     * 如何处理建造房子的流程，交给指挥者
+     * @return
+     */
     public House constructHouse() {
         houseBuilder.buildBaisc();
         houseBuilder.buildwalls();
