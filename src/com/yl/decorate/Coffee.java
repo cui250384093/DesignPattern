@@ -5,5 +5,9 @@ package com.yl.decorate;
  * @Description
  * @date 4/25/21 - 11:07 AM
  */
-public class Coffee {
+public class Coffee extends Drink {
+    @Override
+    public float cost() {
+        return super.getPrice();
+    }
 }
