@@ -7,12 +7,9 @@ package com.yl.bridge;
  */
 public abstract interface Brand {
 
-    /**
-     *
-     */
-    public void call();
-
     public void open();
 
     public void close();
+
+    public void call();
 }
