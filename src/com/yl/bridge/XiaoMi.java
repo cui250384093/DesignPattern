@@ -21,9 +21,5 @@ public class XiaoMi implements Brand {
         System.out.println("xiaomi close");
     }
 
-    public static void main(String[] args) {
-        XiaoMi xiaoMi = new XiaoMi();
-        FoldPhone foldPhone = new FoldPhone(xiaoMi);
-        foldPhone.open();
-    }
+
 }
