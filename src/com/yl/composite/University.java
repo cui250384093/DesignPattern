@@ -29,8 +29,8 @@ public class University extends Component {
     @Override
     public void print() {
         System.out.println(super.getName() + "  " + super.getDes());
-        System.out.print("\t");
         for (Component component : components) {
+            System.out.print("\t");
             component.print();
         }
     }

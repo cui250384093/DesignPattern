@@ -1,5 +1,7 @@
 package com.yl.composite;
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author candk
  * @Description
@@ -15,6 +17,9 @@ public class Client {
 
         Department dep1 = new Department("Automation", "");
         Department dep2 = new Department("Elec Automation", "");
+
+        university.add(elec);
+        university.add(mach);
 
         elec.add(dep1);
         elec.add(dep2);
