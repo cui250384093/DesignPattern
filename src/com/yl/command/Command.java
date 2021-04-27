@@ -7,7 +7,7 @@ package com.yl.command;
  */
 public interface Command {
 
-    void execute();
+    public void execute();
 
-    void undo();
+    public void undo();
 }
