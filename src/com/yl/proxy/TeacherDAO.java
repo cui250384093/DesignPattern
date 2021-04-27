@@ -8,6 +8,11 @@ package com.yl.proxy;
 public class TeacherDAO implements ITeacherDAO {
     @Override
     public void teach() {
+        System.out.println("Teach");
+    }
 
+    @Override
+    public void sleep() {
+        System.out.println("Sleep");
     }
 }

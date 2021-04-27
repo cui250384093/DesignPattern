@@ -8,4 +8,6 @@ package com.yl.proxy;
 public interface ITeacherDAO {
 
     void teach();
+
+    void sleep();
 }

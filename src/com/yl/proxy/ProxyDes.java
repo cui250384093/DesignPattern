@@ -5,7 +5,7 @@ package com.yl.proxy;
  * @Description
  * @date 4/26/21 - 4:14 PM
  */
-public class Proxy {
+public class ProxyDes {
     /**
      * 代理模式：为一个对象提供一个替身，以控制对这个对象的访问，即通过代理对象访问目标对象，这样做的好处是：可以在目标对象实现的基础上，增强额外的功能操作，
      * 即扩展目标对象的功能
@@ -18,5 +18,9 @@ public class Proxy {
      * 一旦接口增加方法，目标对象和代理对象都要维护
      *
      * 动态代理
+     *
+     *
+     * cglib代理
+     *
      */
 }
