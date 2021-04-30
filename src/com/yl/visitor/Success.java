@@ -5,7 +5,7 @@ package com.yl.visitor;
  * @Description
  * @date 4/30/21 - 8:25 AM
  */
-public class Success extends Action {
+public class Success extends Action{
 
     @Override
     public void getManResult(Man man) {

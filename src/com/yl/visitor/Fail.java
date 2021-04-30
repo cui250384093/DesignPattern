@@ -16,4 +16,6 @@ public class Fail extends Action {
     public void getWomanResult(Woman woman) {
         System.out.println("Woman commends fail");
     }
+
+
 }
