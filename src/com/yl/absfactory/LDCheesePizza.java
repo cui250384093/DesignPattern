@@ -1,4 +1,4 @@
-package com.yl.absfactory.pizzastore;
+package com.yl.absfactory;
 
 /**
  * @author candk

@@ -1,14 +1,14 @@
-package com.yl.absfactory.pizzastore;
+package com.yl.absfactory;
 
 /**
  * @author candk
  * @Description
  * @date 4/13/21 - 3:32 PM
  */
-public class LDPepperPizza extends Pizza {
+public class BJPepperPizza extends Pizza {
 
-    public LDPepperPizza() {
-        setName("London Pepper Pizza");
+    public BJPepperPizza() {
+        setName("BeiJing Pepper Pizza");
     }
 
     @Override
