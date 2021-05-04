@@ -1,4 +1,4 @@
-package com.yl.simplefactory.pizzastore;
+package com.yl.simplefactory;
 
 /**
  * @author candk
