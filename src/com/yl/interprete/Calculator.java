@@ -1,5 +1,6 @@
 package com.yl.interprete;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -35,5 +36,9 @@ public class Calculator {
             }
         }
         this.expression = stack.pop();
+    }
+
+    public int run(HashMap<String, Integer> var) {
+        return this.expression.interpret(var);
     }
 }
